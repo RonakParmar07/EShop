@@ -95,6 +95,8 @@ const UserEditScreen = () => {
             <Button type='submit' variant='primary'>
               Update
             </Button>
+
+            {loadingUpdate ? <Loader /> : {}}
           </Form>
         )}
       </FormContainer>

@@ -18,7 +18,7 @@ const CartScreen = () => {
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart);
-  const { cartItems, totalPrice } = cart;
+  const { cartItems } = cart;
 
   const addToCartHandler = async (product, qty) => {
     dispatch(addToCart({ ...product, qty }));
